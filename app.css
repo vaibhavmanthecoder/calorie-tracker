@@ -1,0 +1,145 @@
+body {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: black;
+  text-align: center;
+}
+
+.firstdiv {
+  color: blue;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  overflow-x: auto;
+}
+
+.firstdiv div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 33%;
+  flex: 1 0 auto;
+  padding: 10px;
+}
+
+.firstdiv img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  max-height: 200px;
+}
+
+.first-li {
+  font-size: 1.5rem;
+}
+
+.bold-li {
+  font-weight: bold;
+}
+
+.full-width-button {
+  width: 100%;
+  background-color: #34C759; /* green color */
+  color: #ffffff; /* white text color */
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.nav button {
+  color: red;
+  background-color: pink;
+  cursor: pointer;
+  border: 2px solid black;
+  text-decoration: none;
+  border-radius: 2px;
+  padding: 15px;
+  flex: 1;
+  font-size: 16px;
+  box-sizing: border-box;
+  height: 50px;
+  white-space: nowrap;
+  margin: 5px;
+}
+
+.nav button:hover {
+  background-color: blue;
+  color: magenta;
+  border: 2px solid #4CAF50;
+  font-size: 16px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  position: relative;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 24px;
+  flex: 1;
+  text-align: center;
+}
+
+.login-button {
+  color: white;
+  background-color: blue;
+  cursor: pointer;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+  position: absolute;
+  right: 10px;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.login-button:hover {
+  background-color: darkblue;
+  transform: scale(1.1);
+}
+
+.search {
+  max-width: 100%;
+  width: 100%;
+  text-decoration-line: underline;
+}
+
+.slideshow img {
+  width: 100%;
+  height: auto;
+  display: none;
+}
+
+.slideshow img:first-child {
+  display: block;
+}
+
+.slideshow .caption {
+  text-align: center;
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+.content-container {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
