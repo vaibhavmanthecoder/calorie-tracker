@@ -1,21 +1,28 @@
+/* Global Styles */
 body {
-  background-color: white;
+  background-color: #f5f5f5;
   margin: 0;
   padding: 0;
+  font-family: 'Roboto', sans-serif;
+  color: #333;
 }
 
+/* Header Styles */
 h1 {
-  color: black;
+  color: #333;
   text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
 }
 
+/* Container and Flexbox Styling */
 .firstdiv {
-  color: blue;
+  color: #007bff;
   display: flex;
   justify-content: space-around;
   width: 100%;
   box-sizing: border-box;
-  padding: 10px;
+  padding: 20px;
   overflow-x: auto;
 }
 
@@ -23,36 +30,54 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 33%;
+  max-width: 30%;
   flex: 1 0 auto;
-  padding: 10px;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.firstdiv div:hover {
+  transform: translateY(-10px);
 }
 
 .firstdiv img {
   width: 100%;
   height: auto;
   object-fit: cover;
-  max-height: 200px;
+  max-height: 250px;
+  border-radius: 8px;
 }
 
+/* Typography */
 .first-li {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
+  font-weight: 500;
 }
 
 .bold-li {
-  font-weight: bold;
+  font-weight: 700;
 }
 
+/* Buttons */
 .full-width-button {
   width: 100%;
-  background-color: #34C759; /* green color */
-  color: #ffffff; /* white text color */
-  padding: 10px;
+  background-color: #28a745;
+  color: #ffffff;
+  padding: 12px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
 }
 
+.full-width-button:hover {
+  background-color: #218838;
+}
+
+/* Navigation */
 .nav {
   display: flex;
   justify-content: space-around;
@@ -60,46 +85,46 @@ h1 {
 }
 
 .nav button {
-  color: red;
-  background-color: pink;
+  color: #fff;
+  background-color: #007bff;
   cursor: pointer;
-  border: 2px solid black;
-  text-decoration: none;
-  border-radius: 2px;
+  border: none;
+  border-radius: 5px;
   padding: 15px;
   flex: 1;
-  font-size: 16px;
+  font-size: 18px;
   box-sizing: border-box;
-  height: 50px;
-  white-space: nowrap;
   margin: 5px;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .nav button:hover {
-  background-color: blue;
-  color: magenta;
-  border: 2px solid #4CAF50;
-  font-size: 16px;
+  background-color: #0056b3;
+  transform: translateY(-5px);
 }
 
+/* Header Specific Styles */
 .header {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
+  padding: 20px;
+  background-color: #007bff;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   position: relative;
 }
 
 .header h1 {
   margin: 0;
-  font-size: 24px;
+  font-size: 2rem;
   flex: 1;
   text-align: center;
 }
 
 .login-button {
   color: white;
-  background-color: blue;
+  background-color: #0056b3;
   cursor: pointer;
   border: none;
   padding: 10px 20px;
@@ -107,25 +132,29 @@ h1 {
   font-size: 16px;
   box-sizing: border-box;
   position: absolute;
-  right: 10px;
+  right: 20px;
   transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
 .login-button:hover {
-  background-color: darkblue;
+  background-color: #003580;
   transform: scale(1.1);
 }
 
+/* Search Bar */
 .search {
   max-width: 100%;
   width: 100%;
   text-decoration-line: underline;
+  margin: 20px 0;
 }
 
+/* Slideshow */
 .slideshow img {
   width: 100%;
   height: auto;
   display: none;
+  border-radius: 8px;
 }
 
 .slideshow img:first-child {
@@ -134,12 +163,18 @@ h1 {
 
 .slideshow .caption {
   text-align: center;
-  font-size: 1.2em;
-  margin-top: 10px;
+  font-size: 1.4em;
+  margin-top: 15px;
+  color: #666;
 }
 
+/* Content Container */
 .content-container {
   width: 100%;
-  padding: 20px;
+  padding: 30px;
   box-sizing: border-box;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
 }
