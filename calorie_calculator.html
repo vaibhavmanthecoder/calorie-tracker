@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calorie Calculator</title>
+    <link rel="stylesheet" href="calc.css">
+</head>
+<body>
+    <div class="header">
+        <h1 style="text-align: center; color: blueviolet;">Calorie Calculator</h1>
+    </div>
+    
+    <hr>
+    
+    <!-- Food Items Section -->
+    <div class="calculator">
+        <p><span style="background-color: black; color: blueviolet;"><b>ENTER YOUR FOOD AND AMOUNT</b></span></p>
+        <div id="foodInputs">
+            <div class="food-input">
+                <input type="text" class="foodItem" placeholder="Enter food item">
+                <input type="number" class="foodAmount" placeholder="Enter amount in grams">
+                <button onclick="addFoodItem()">Add More</button>
+            </div>
+        </div>
+        <p id="totalCaloriesConsumed">Total Calories Consumed: 0</p>
+    </div>
+
+    <!-- Quantitative Food Items Section -->
+    <div class="calculator">
+        <p><span style="background-color: black; color: blueviolet;"><b>ENTER QUANTITATIVE FOOD ITEMS</b></span></p>
+        <div id="quantitativeFoodInputs">
+            <div class="quantitative-food-input">
+                <input type="text" class="quantFoodItem" placeholder="Enter food name (e.g., pizza)">
+                <input type="number" class="quantFoodQuantity" placeholder="Enter quantity (e.g., slices)">
+                <input type="text" class="quantFoodSize" placeholder="Enter size (e.g., medium)">
+                <button onclick="addQuantitativeFoodItem()">Add More</button>
+            </div>
+        </div>
+        <p id="totalQuantitativeCaloriesConsumed">Total Calories from Quantitative Foods: 0</p>
+    </div>
+    
+    <!-- Extra Inputs Section -->
+    <div class="extra-inputs">
+        <div class="input-box">
+            <label for="heightInput">Enter your height (cm):</label>
+            <input type="number" id="heightInput" placeholder="Enter height in cm">
+        </div>
+        <div class="input-box">
+            <label for="weightInput">Enter your weight (kg):</label>
+            <input type="number" id="weightInput" placeholder="Enter weight in kg">
+        </div>
+        <div class="input-box">
+            <label for="ageInput">Enter your age:</label>
+            <input type="number" id="ageInput" placeholder="Enter age">
+        </div>
+        <div class="input-box">
+            <label for="muscleInput">Which muscle did you train today?</label>
+            <input type="text" id="muscleInput" placeholder="Enter muscle group">
+        </div>
+        <div class="input-box">
+            <label for="exercisesInput">Number of exercises</label>
+            <input type="number" id="exercisesInput" placeholder="Enter number of exercises">
+            <label for="setsInput">Number of sets per exercise</label>
+            <input type="number" id="setsInput" placeholder="Enter number of sets">
+        </div>
+        <div class="input-box">
+            <label for="cheatMealInput">Did you have a cheat meal today?</label>
+            <input type="checkbox" id="cheatMealInput">
+        </div>
+        <div class="input-box">
+            <label for="proteinInput">How much protein did you take in total? (grams)</label>
+            <input type="number" id="proteinInput" placeholder="Enter protein intake in grams">
+        </div>
+    </div>
+
+    <!-- Calculate Button -->
+    <div class="calculate-button">
+        <button style="cursor: pointer;" onclick="calculateCalories()">Calculate</button>
+    </div>
+
+    <!-- Result Section -->
+    <div id="result">
+        <p id="calorieResult"></p>
+        <img id="cheatMealImage" src="mnt/data/cheat-meal-no.png" style="display: none;"> <!-- Default image for "No" -->
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>

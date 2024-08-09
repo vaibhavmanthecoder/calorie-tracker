@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-image: url('haha.jpeg'); /* Replace with your image */
+    background-size: cover;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.calculator, .extra-inputs {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.calculator p, .extra-inputs .input-box label {
+    font-weight: bold;
+}
+
+.calculator input, .extra-inputs input {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.food-input, .quantitative-food-input {
+    display: flex;
+    align-items: center;
+}
+
+.food-input input, .quantitative-food-input input {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.food-input button, .quantitative-food-input button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.food-input button:hover, .quantitative-food-input button:hover {
+    background-color: #45a049;
+}
+
+.calculate-button {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.calculate-button button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.calculate-button button:hover {
+    background-color: #45a049;
+}
+
+.extra-inputs .input-box {
+    margin-bottom: 15px;
+}
+
+#result {
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #e0f7fa;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#result p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+input[type="checkbox"] {
+    width: auto;
+    margin-left: 10px;
+}
+
+#cheatMealImage {
+    margin-top: 20px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
